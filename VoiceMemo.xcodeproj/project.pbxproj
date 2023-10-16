@@ -26,6 +26,10 @@
 		D8A61BE82ADD2D140057DA75 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61BE72ADD2D140057DA75 /* TodoListViewModel.swift */; };
 		D8A61BEA2ADD33760057DA75 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61BE92ADD33760057DA75 /* TodoListView.swift */; };
 		D8A61BED2ADD3C5E0057DA75 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61BEC2ADD3C5E0057DA75 /* TodoViewModel.swift */; };
+		D8A61BF02ADD77F00057DA75 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61BEF2ADD77F00057DA75 /* Memo.swift */; };
+		D8A61BF32ADD79140057DA75 /* MemoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61BF22ADD79140057DA75 /* MemoListViewModel.swift */; };
+		D8A61BF52ADD7B6F0057DA75 /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61BF42ADD7B6F0057DA75 /* MemoListView.swift */; };
+		D8A61BF82ADD816B0057DA75 /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61BF72ADD816B0057DA75 /* MemoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		D8A61BE72ADD2D140057DA75 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 		D8A61BE92ADD33760057DA75 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		D8A61BEC2ADD3C5E0057DA75 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		D8A61BEF2ADD77F00057DA75 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		D8A61BF22ADD79140057DA75 /* MemoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewModel.swift; sourceTree = "<group>"; };
+		D8A61BF42ADD7B6F0057DA75 /* MemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
+		D8A61BF72ADD816B0057DA75 /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +141,6 @@
 			children = (
 				D8A61BC62ADCE11A0057DA75 /* Onboarding */,
 				D8A61BE62ADD2CA90057DA75 /* Home */,
-				D8A61BD62ADD17FE0057DA75 /* MemoView.swift */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -152,6 +159,7 @@
 				D8A61BCD2ADD15650057DA75 /* Path */,
 				D8A61BCA2ADD07E00057DA75 /* Onboarding */,
 				D8A61BE22ADD2BC70057DA75 /* Todo */,
+				D8A61BEE2ADD77E30057DA75 /* Memo */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,6 +221,7 @@
 			children = (
 				D8A61BD22ADD17D80057DA75 /* HomeView.swift */,
 				D8A61BE52ADD2C9C0057DA75 /* TodoList */,
+				D8A61BF12ADD78F70057DA75 /* MemoList */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -224,6 +233,33 @@
 				D8A61BEC2ADD3C5E0057DA75 /* TodoViewModel.swift */,
 			);
 			path = Todo;
+			sourceTree = "<group>";
+		};
+		D8A61BEE2ADD77E30057DA75 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				D8A61BEF2ADD77F00057DA75 /* Memo.swift */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		D8A61BF12ADD78F70057DA75 /* MemoList */ = {
+			isa = PBXGroup;
+			children = (
+				D8A61BF62ADD81140057DA75 /* Memo */,
+				D8A61BF22ADD79140057DA75 /* MemoListViewModel.swift */,
+				D8A61BF42ADD7B6F0057DA75 /* MemoListView.swift */,
+			);
+			path = MemoList;
+			sourceTree = "<group>";
+		};
+		D8A61BF62ADD81140057DA75 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				D8A61BD62ADD17FE0057DA75 /* MemoView.swift */,
+				D8A61BF72ADD816B0057DA75 /* MemoViewModel.swift */,
+			);
+			path = Memo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,10 +339,14 @@
 				D8A61BEA2ADD33760057DA75 /* TodoListView.swift in Sources */,
 				D8A61BE82ADD2D140057DA75 /* TodoListViewModel.swift in Sources */,
 				D8A61BD12ADD15B50057DA75 /* Path.swift in Sources */,
+				D8A61BF52ADD7B6F0057DA75 /* MemoListView.swift in Sources */,
 				D8A61BCC2ADD07EE0057DA75 /* OnboardingContent.swift in Sources */,
 				D8A61BD92ADD28550057DA75 /* Date+Extension.swift in Sources */,
+				D8A61BF32ADD79140057DA75 /* MemoListViewModel.swift in Sources */,
 				D8A61BCF2ADD15720057DA75 /* PathType.swift in Sources */,
 				D8A61BC82ADCE1290057DA75 /* OnboardingView.swift in Sources */,
+				D8A61BF82ADD816B0057DA75 /* MemoViewModel.swift in Sources */,
+				D8A61BF02ADD77F00057DA75 /* Memo.swift in Sources */,
 				D8A61BD32ADD17D80057DA75 /* HomeView.swift in Sources */,
 				D8A61BD52ADD17E60057DA75 /* TodoView.swift in Sources */,
 				D8A61BC42AD9422C0057DA75 /* Color+Extension.swift in Sources */,
