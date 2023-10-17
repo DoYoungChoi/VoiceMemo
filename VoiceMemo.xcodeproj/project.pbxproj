@@ -37,6 +37,8 @@
 		D8A61C052ADE79530057DA75 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61C042ADE79530057DA75 /* Int+Extension.swift */; };
 		D8A61C072ADE7A500057DA75 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61C062ADE7A500057DA75 /* TimerViewModel.swift */; };
 		D8A61C092ADE7FF50057DA75 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61C082ADE7FF50057DA75 /* TimerView.swift */; };
+		D8A61C0C2ADE9E4E0057DA75 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61C0B2ADE9E4E0057DA75 /* NotificationService.swift */; };
+		D8A61C0E2ADEA2740057DA75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61C0D2ADEA2740057DA75 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		D8A61C042ADE79530057DA75 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		D8A61C062ADE7A500057DA75 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		D8A61C082ADE7FF50057DA75 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		D8A61C0B2ADE9E4E0057DA75 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		D8A61C0D2ADEA2740057DA75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				D85718152AD9353B00EF4ACF /* VoiceMemoApp.swift */,
+				D8A61C0D2ADEA2740057DA75 /* AppDelegate.swift */,
 				D85718242AD9400D00EF4ACF /* LaunchScreen.storyboard */,
 			);
 			path = App;
@@ -136,6 +141,7 @@
 		D8A61BC12AD942170057DA75 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D8A61C0A2ADE9E380057DA75 /* Service */,
 				D8A61BC22AD9421E0057DA75 /* Extension */,
 			);
 			path = Core;
@@ -307,6 +313,14 @@
 			path = Timer;
 			sourceTree = "<group>";
 		};
+		D8A61C0A2ADE9E380057DA75 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D8A61C0B2ADE9E4E0057DA75 /* NotificationService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -382,6 +396,7 @@
 				D8A61BDF2ADD29E30057DA75 /* CustomNavigationBar.swift in Sources */,
 				D8A61BFA2ADE31470057DA75 /* Double+Extension.swift in Sources */,
 				D8A61BD72ADD17FE0057DA75 /* MemoView.swift in Sources */,
+				D8A61C0E2ADEA2740057DA75 /* AppDelegate.swift in Sources */,
 				D8A61BEA2ADD33760057DA75 /* TodoListView.swift in Sources */,
 				D8A61BE82ADD2D140057DA75 /* TodoListViewModel.swift in Sources */,
 				D8A61BD12ADD15B50057DA75 /* Path.swift in Sources */,
@@ -394,6 +409,7 @@
 				D8A61BCF2ADD15720057DA75 /* PathType.swift in Sources */,
 				D8A61BC82ADCE1290057DA75 /* OnboardingView.swift in Sources */,
 				D8A61BF82ADD816B0057DA75 /* MemoViewModel.swift in Sources */,
+				D8A61C0C2ADE9E4E0057DA75 /* NotificationService.swift in Sources */,
 				D8A61BF02ADD77F00057DA75 /* Memo.swift in Sources */,
 				D8A61C072ADE7A500057DA75 /* TimerViewModel.swift in Sources */,
 				D8A61C032ADE78B00057DA75 /* Time.swift in Sources */,
