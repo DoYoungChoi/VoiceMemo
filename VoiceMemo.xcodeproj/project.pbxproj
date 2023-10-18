@@ -42,6 +42,7 @@
 		D8A61C112ADF77C60057DA75 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61C102ADF77C60057DA75 /* SettingView.swift */; };
 		D8A61C142ADF80250057DA75 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61C132ADF80250057DA75 /* Tab.swift */; };
 		D8A61C162ADF80B00057DA75 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61C152ADF80B00057DA75 /* HomeViewModel.swift */; };
+		D8A61C1B2ADFB6170057DA75 /* WriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61C1A2ADFB6170057DA75 /* WriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		D8A61C102ADF77C60057DA75 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		D8A61C132ADF80250057DA75 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		D8A61C152ADF80B00057DA75 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D8A61C1A2ADFB6170057DA75 /* WriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 		D8A61BDA2ADD296B0057DA75 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				D8A61C172ADFB5F30057DA75 /* CustomView */,
 				D8A61BDB2ADD29740057DA75 /* NavigationBar */,
 			);
 			path = Component;
@@ -344,6 +347,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		D8A61C172ADFB5F30057DA75 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				D8A61C1A2ADFB6170057DA75 /* WriteButton.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -441,6 +452,7 @@
 				D8A61C112ADF77C60057DA75 /* SettingView.swift in Sources */,
 				D8A61BD32ADD17D80057DA75 /* HomeView.swift in Sources */,
 				D8A61BD52ADD17E60057DA75 /* TodoView.swift in Sources */,
+				D8A61C1B2ADFB6170057DA75 /* WriteButton.swift in Sources */,
 				D8A61BFF2ADE668A0057DA75 /* VoiceRecorderView.swift in Sources */,
 				D8A61BC42AD9422C0057DA75 /* Color+Extension.swift in Sources */,
 				D85718162AD9353B00EF4ACF /* VoiceMemoApp.swift in Sources */,
