@@ -183,7 +183,7 @@ private struct OperateTimerView: View {
                 Button {
                     timerViewModel.pauseOrResumeButtonTapped()
                 } label: {
-                    Text(timerViewModel.isPaused ? "재개" : "일시 정지")
+                    Text(timerViewModel.isPaused ? "계속 진행" : "일시 정지")
                         .font(.system(size: 14))
                         .foregroundColor(.customIconGray)
                         .padding(.vertical, 25)

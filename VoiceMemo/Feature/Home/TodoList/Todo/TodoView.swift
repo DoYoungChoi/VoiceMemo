@@ -154,5 +154,7 @@ private struct SelectDayView: View {
 struct TodoView_Previews: PreviewProvider {
     static var previews: some View {
         TodoView()
+            .environmentObject(PathModel())
+            .environmentObject(TodoListViewModel())
     }
 }

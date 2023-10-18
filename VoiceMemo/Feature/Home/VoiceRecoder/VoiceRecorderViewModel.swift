@@ -51,8 +51,10 @@ class VoiceRecorderViewModel: NSObject, ObservableObject, AVAudioPlayerDelegate 
 // MARK: - 뷰 로직
 extension VoiceRecorderViewModel {
     func voiceRecordCellTapped(_ recordFile: URL) {
-        stopPlaying()
-        selectedRecordFile = recordFile
+        if selectedRecordFile != recordFile {
+            stopPlaying()
+            selectedRecordFile = recordFile
+        }
     }
     
     func removeButtonTapped() {
