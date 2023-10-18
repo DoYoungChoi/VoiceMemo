@@ -286,9 +286,14 @@ private struct ProgressBar: View {
 // MARK: - 녹음 버튼 뷰
 private struct RecordButtonView: View {
     @ObservedObject private var voiceRecorderViewModel: VoiceRecorderViewModel
+    @State private var isAnimating: Bool
     
-    fileprivate init(voiceRecorderViewModel: VoiceRecorderViewModel) {
+    fileprivate init(
+        voiceRecorderViewModel: VoiceRecorderViewModel,
+        isAnimating: Bool = false
+    ) {
         self.voiceRecorderViewModel = voiceRecorderViewModel
+        self.isAnimating = isAnimating
     }
     
     fileprivate var body: some View {
@@ -303,6 +308,15 @@ private struct RecordButtonView: View {
                 } label: {
                     if voiceRecorderViewModel.isRecording {
                         Image("mic_recording")
+                            .scaleEffect(isAnimating ? 1.5 : 1)
+                            .onAppear {
+                                withAnimation(.spring().repeatForever()) {
+                                    isAnimating.toggle()
+                                }
+                            }
+                            .onDisappear {
+                                isAnimating = false
+                            }
                     } else {
                         Image("mic")
                     }
