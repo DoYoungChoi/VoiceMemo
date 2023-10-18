@@ -39,6 +39,7 @@
 		D8A61C092ADE7FF50057DA75 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61C082ADE7FF50057DA75 /* TimerView.swift */; };
 		D8A61C0C2ADE9E4E0057DA75 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61C0B2ADE9E4E0057DA75 /* NotificationService.swift */; };
 		D8A61C0E2ADEA2740057DA75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61C0D2ADEA2740057DA75 /* AppDelegate.swift */; };
+		D8A61C112ADF77C60057DA75 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A61C102ADF77C60057DA75 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		D8A61C082ADE7FF50057DA75 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		D8A61C0B2ADE9E4E0057DA75 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		D8A61C0D2ADEA2740057DA75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8A61C102ADF77C60057DA75 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 				D8A61BF12ADD78F70057DA75 /* MemoList */,
 				D8A61BFB2ADE332F0057DA75 /* VoiceRecoder */,
 				D8A61C002ADE780C0057DA75 /* Timer */,
+				D8A61C0F2ADF77AC0057DA75 /* Setting */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -319,6 +322,14 @@
 				D8A61C0B2ADE9E4E0057DA75 /* NotificationService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		D8A61C0F2ADF77AC0057DA75 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				D8A61C102ADF77C60057DA75 /* SettingView.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,6 +424,7 @@
 				D8A61BF02ADD77F00057DA75 /* Memo.swift in Sources */,
 				D8A61C072ADE7A500057DA75 /* TimerViewModel.swift in Sources */,
 				D8A61C032ADE78B00057DA75 /* Time.swift in Sources */,
+				D8A61C112ADF77C60057DA75 /* SettingView.swift in Sources */,
 				D8A61BD32ADD17D80057DA75 /* HomeView.swift in Sources */,
 				D8A61BD52ADD17E60057DA75 /* TodoView.swift in Sources */,
 				D8A61BFF2ADE668A0057DA75 /* VoiceRecorderView.swift in Sources */,
